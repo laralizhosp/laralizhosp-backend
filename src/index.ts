@@ -9,7 +9,7 @@ declare global {
         URL: string;
         ORIGIN: string;
         METHODS: string[];
-        ALLOWEDHEADERS: string[];
+        ALLOWED_HEADERS: string[];
       }
     }
   }
