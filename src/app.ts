@@ -14,10 +14,10 @@ export class App {
   }
   private enableCors() {
     const corsOptions: cors.CorsOptions = {
-      origin: "*",
-      methods: "GET, POST, PUT, DELETE, OPTIONS",
+      origin: process.env.ORIGIN,
+      methods: process.env.METHODS,
       allowedHeaders:
-        "Content-Type, Authorization",
+        process.env.ALLOWED_HEADERS
     };
     this.server.use(cors(corsOptions));
   }
